@@ -1,0 +1,11 @@
+#letter {
+    background-image: url('parchment.jpg');
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    max-width: 800px;
+    border: 1px solid black;
+  }
