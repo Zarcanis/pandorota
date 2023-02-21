@@ -1,11 +1,48 @@
-#letter {
-    background-image: url('https://github.com/Zarcanis/pandorota/blob/aec734338bff6dceb4fd210e47681fff3549bd95/parchment.jpg');
-    background-size: cover;
-    padding: 20px;
-    margin: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;
-    max-width: 800px;
-    border: 1px solid black;
-  }
+body {
+  background-image: url(parchment.jpg);
+  background-repeat: repeat;
+  color: #573D1C;
+  font-family: 'Garamond', serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Goudy Old Style', Garamond, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+p, ul, ol {
+  margin-bottom: 30px;
+}
+
+ul, ol {
+  margin-left: 30px;
+}
+
+a {
+  color: #573D1C;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #3E2716;
+}
+
+blockquote {
+  margin: 30px 0;
+  padding: 20px;
+  border-left: 5px solid #573D1C;
+  background-color: #F5F5DC;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
