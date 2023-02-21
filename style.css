@@ -1,11 +1,25 @@
 body {
-  background-image: url(parchment.jpg);
+  background-image: url(parchment.jpg.jpg);
   background-repeat: repeat;
   color: #573D1C;
   font-family: 'Garamond', serif;
   font-size: 24px;
   line-height: 1.5;
 }
+
+.parchemin-img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 
 .container {
   max-width: 800px;
