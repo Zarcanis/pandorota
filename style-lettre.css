@@ -41,12 +41,12 @@ ul, ol {
 }
 
 a {
-  color: #0b071c;
+  color: #573D1C;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #3E2716;
+  color: #0b071c;
 }
 
 blockquote {
