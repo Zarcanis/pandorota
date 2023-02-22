@@ -5,7 +5,7 @@ const puzzlePieces = document.querySelectorAll('.puzzle-piece');
 puzzlePieces.forEach(piece => {
   piece.addEventListener('click', () => {
     // Vérifiez si l'image cliquée a la bonne réponse
-    if (piece.alt === 'image 7') {
+    if (piece.alt === 'image7') {
       // Affichez un message de félicitations et redirigez vers la page suivante après 2 secondes
       const message = document.getElementById('message');
       message.textContent = 'Bravo, c\'est la bonne réponse !';
