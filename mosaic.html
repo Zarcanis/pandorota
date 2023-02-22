@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <title>Énigme de la mosaïque d'images</title>
+ <link rel="stylesheet" href="stylemosaic.css">
+ <script src="scriptmosaic.js"></script>
+</head>
+<body>
+ <div class="background">
+  <div class="mosaic">
+   <img src="image1.jpg" alt="image 1" class="image" onclick="checkAnswer(this)">
+   <img src="image2.jpg" alt="image 2" class="image" onclick="checkAnswer(this)">
+   <img src="image3.jpg" alt="image 3" class="image" onclick="checkAnswer(this)">
+   <img src="image4.jpg" alt="image 4" class="image" onclick="checkAnswer(this)">
+   <img src="image5.jpg" alt="image 5" class="image" onclick="checkAnswer(this)">
+   <img src="image6.jpg" alt="image 6" class="image" onclick="checkAnswer(this)">
+   <img src="image7.jpg" alt="image 7" class="image" onclick="checkAnswer(this)">
+   <img src="image8.jpg" alt="image 8" class="image" onclick="checkAnswer(this)">
+   <img src="image9.jpg" alt="image 9" class="image" onclick="checkAnswer(this)">
+   <img src="image10.jpg" alt="image 10" class="image" onclick="checkAnswer(this)">
+  </div>
+ </div>
+
+ <div class="content">
+  <h1>Énigme de la mosaïque d'images</h1>
+  <p>Je suis quelque chose que tout le monde a, mais personne ne peut perdre. Qui suis-je ?</p>
+  <p class="hint">(Indice : c'est quelque chose que vous utilisez tous les jours.)</p>
+  <p id="message"></p>
+ </div>
+</body>
+</html>
