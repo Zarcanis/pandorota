@@ -1,49 +1,24 @@
-var blankTile = {
- x: 300,
- y: 300
-};
+var emptySquare = {x: 2, y: 2};
+var message = document.getElementById("message");
 
-var puzzleTiles = [];
-var solvedTiles = [];
-var puzzleSize = 3;
-var tileSize = 200;
-var shuffleCount = 1000;
+// Initialize drag-and-drop for puzzle pieces
+var puzzlePieces = document.querySelectorAll(".puzzle-piece");
+puzzlePieces.forEach(function(piece) {
+  piece.addEventListener("dragstart", dragstartHandler);
+});
 
-var puzzleContainer = document.getElementById('puzzle-container');
-var puzzleArea = document.getElementById('puzzle-area');
-var shuffleButton = document.getElementById('shuffle-button');
-var solveButton = document.getElementById('solve-button');
-var message = document.getElementById('message');
-var nextPageButton = document.getElementById('next-page-button');
+// Initialize drop zones for puzzle pieces
+var dropZones = document.querySelectorAll(".puzzle-piece");
+dropZones.forEach(function(zone) {
+  zone.addEventListener("drop", dropHandler);
+  zone.addEventListener("dragover", dragoverHandler);
+});
 
-// Create tiles and add them to the DOM
-function createTiles() {
- for (var i = 0; i < puzzleSize; i++) {
-  for (var j = 0; j < puzzleSize; j++) {
-   var tile = document.createElement('div');
-   tile.className = 'puzzle-tile';
-   tile.style.width = tileSize + 'px';
-   tile.style.height = tileSize + 'px';
-   tile.style.backgroundPosition = (-j * tileSize) + 'px ' + (-i * tileSize) + 'px';
-   tile.style.top = i * tileSize + 'px';
-   tile.style.left = j * tileSize + 'px';
-   puzzleArea.appendChild(tile);
-   puzzleTiles.push(tile);
-   solvedTiles.push({x: j * tileSize, y: i * tileSize});
-  }
- }
+function dragstartHandler(event) {
+  event.dataTransfer.setData("text/plain", event.target.id);
 }
 
-// Shuffle the tiles
-function shuffleTiles() {
- for (var i = 0; i < shuffleCount; i++) {
-  var neighbors = [];
-  if (blankTile.x > 0) {
-   neighbors.push({x: blankTile.x - tileSize, y: blankTile.y});
-  }
-  if (blankTile.x < (puzzleSize - 1) * tileSize) {
-   neighbors.push({x: blankTile.x + tileSize, y: blankTile.y});
-  }
-  if (blankTile.y > 0) {
-   neighbors.push({x: blankTile.x, y: blankTile.y - tileSize});
-	
+function dropHandler(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("text/plain");
+  var draggedElement = document.getElementById(data);
