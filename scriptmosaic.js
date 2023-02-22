@@ -10,7 +10,7 @@ puzzlePieces.forEach(piece => {
       const message = document.getElementById('message');
       message.textContent = 'Bravo, c\'est la bonne réponse !';
       setTimeout(() => {
-        window.location.href = 'lettree.html';
+        window.location.href = 'lettre.html';
       }, 2000);
     } else {
       // Affichez un message d'erreur si la réponse est incorrecte
