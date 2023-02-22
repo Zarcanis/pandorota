@@ -1,0 +1,28 @@
+.mosaic-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mosaic-image {
+	width: 20%;
+	height: auto;
+	object-fit: cover;
+}
+
+.enigma-container {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.enigma-option {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	margin: 20px;
+	cursor: pointer;
+}
+
+#message {
+	font-size: 24px;
+	margin-top: 30px;
+}
