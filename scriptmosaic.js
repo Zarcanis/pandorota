@@ -1,5 +1,5 @@
 // Sélectionnez tous les éléments de l'image avec la classe "puzzle-piece"
-const puzzlePieces = document.querySelectorAll('.mosaic');
+const puzzlePieces = document.querySelectorAll('.puzzle-piece');
 
 // Bouclez à travers chaque élément d'image et ajoutez un gestionnaire d'événements de clic
 puzzlePieces.forEach(piece => {
