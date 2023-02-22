@@ -1,33 +1,58 @@
-#puzzle-container {
- margin: 0 auto;
- width: 600px;
- height: 600px;
- position: relative;
+.puzzle-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
 }
 
-#puzzle-area {
- background-image: url(puzzle-image.jpg);
- background-size: 600px 600px;
- position: absolute;
- top: 0;
- left: 0;
+.puzzle-row {
+  display: flex;
+  flex-direction: row;
 }
 
-.puzzle-tile {
- background-color: #fff;
- position: absolute;
- border: 1px solid #000;
+.puzzle-piece {
+  width: 125px;
+  height: 125px;
+  background-size: 400px 400px;
+  background-image: url('path/to/puzzle-image.jpg');
+  margin: 5px;
+  border: 1px solid black;
 }
 
-#puzzle-buttons {
- margin-top: 20px;
- text-align: center;
+#puzzle-piece-1 {
+  background-position: 0 0;
 }
 
-#message {
- margin-top: 20px;
- text-align: center;
- font-size: 24px;
- font-weight: bold;
- color: #f00;
+#puzzle-piece-2 {
+  background-position: -125px 0;
 }
+
+#puzzle-piece-3 {
+  background-position: -250px 0;
+}
+
+#puzzle-piece-4 {
+  background-position: 0 -125px;
+}
+
+#puzzle-piece-5 {
+  background-position: -125px -125px;
+}
+
+#puzzle-piece-6 {
+  background-position: -250px -125px;
+}
+
+#puzzle-piece-7 {
+  background-position: 0 -250px;
+}
+
+#puzzle-piece-8 {
+  background-position: -125px -250px;
+}
+
+#puzzle-piece-9 {
+  background-position: -250px -250px;
+}
+
