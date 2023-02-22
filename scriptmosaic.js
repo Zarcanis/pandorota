@@ -1,6 +1,6 @@
 function checkAnswer(image) {
  var message = document.getElementById("message");
- if (image.alt === "image7") {
+ if (image.alt === "image 7") {
   message.innerHTML = "Bravo, c'est la bonne réponse !";
   setTimeout(function() {
    window.location.href = "lettre.html";
