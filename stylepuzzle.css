@@ -1,0 +1,33 @@
+#puzzle-container {
+ margin: 0 auto;
+ width: 600px;
+ height: 600px;
+ position: relative;
+}
+
+#puzzle-area {
+ background-image: url(puzzle-image.jpg);
+ background-size: 600px 600px;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.puzzle-tile {
+ background-color: #fff;
+ position: absolute;
+ border: 1px solid #000;
+}
+
+#puzzle-buttons {
+ margin-top: 20px;
+ text-align: center;
+}
+
+#message {
+ margin-top: 20px;
+ text-align: center;
+ font-size: 24px;
+ font-weight: bold;
+ color: #f00;
+}
