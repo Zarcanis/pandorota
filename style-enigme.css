@@ -61,6 +61,6 @@ button[type="submit"]:hover {
   transform: translateX(-50%);
   z-index: 999;
   margin-bottom: 50px; /* Ajoute une marge de 20px en bas */
-  margin-top: 50px; /* Ajoute une marge de 20px en bas */
+  margin-top: 100px; /* Ajoute une marge de 20px en bas */
 }
 
