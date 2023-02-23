@@ -59,12 +59,7 @@ button[type="submit"]:hover {
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
-  margin-bottom: 20px; /* Ajoute une marge de 20px en bas */
   margin-top: 20px; /* Ajoute une marge de 20px en bas */
 }
 
-.gif-container img {
-  display: block;
- 
-}
 
