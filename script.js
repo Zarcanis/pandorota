@@ -6,7 +6,7 @@ form.addEventListener('submit', function(event) {
   
   const password = passwordInput.value;
   
-  if (password === 'petitelune') {
+  if (password === 'Password') {
     window.location.href = 'enigme.html';
   } else {
     alert('Mot de passe incorrect');
