@@ -1,3 +1,63 @@
+// Tableau des images à utiliser pour le puzzle
+var images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg"];
+
+// Mélange aléatoire des images
+shuffle(images);
+
+// Tableau pour stocker l'emplacement actuel de chaque image
+var positions = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+
+// Tableau pour stocker l'emplacement cible de chaque image
+var targets = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Variables pour suivre l'emplacement de l'image vide
+var emptyX = 2;
+var emptyY = 2;
+
+// Fonction pour mélanger aléatoirement les éléments d'un tableau
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+// Fonction pour dessiner le puzzle à l'écran
+function drawPuzzle() {
+  var puzzle = document.getElementById("puzzle");
+  puzzle.innerHTML = "";
+
+  for (var i = 0; i < 10; i++) {
+    var x = i % 3;
+    var y = Math.floor(i / 3);
+    positions[i] = -1;
+
+    if (i != 9) {
+      var tile = document.createElement("div");
+      tile.setAttribute("class", "tile");
+      tile.style.backgroundImage = "url('images/" + images[i] + "')";
+      tile.style.backgroundPosition = (-x * 100) + "px " + (-y * 100) + "px";
+      tile.style.left = (x * 100) + "px";
+      tile.style.top = (y * 100) + "px";
+      tile.setAttribute("id", i);
+      tile.addEventListener("click", moveTile);
+      puzzle.appendChild(tile);
+      positions[i] = i;
+    }
+  }
+}
+
+
+
+
 // Fonction pour déplacer une tuile
 function moveTile() {
   var id = parseInt(this.getAttribute("id"));
@@ -33,54 +93,4 @@ function checkWin() {
     }
   }
   return true;
-}
-
-// Fonction pour mélanger les tuiles de manière aléatoire
-function shuffleTiles() {
-  shuffle(images);
-  drawPuzzle();
-}
-
-// Fonction pour dessiner le puzzle à l'écran
-function drawPuzzle() {
-  var puzzle = document.getElementById("puzzle");
-  puzzle.innerHTML = "";
-
-  for (var i = 0; i < 16; i++) {
-    var x = i % 4;
-    var y = Math.floor(i / 4);
-    positions[i] = -1;
-
-    if (i != 15) {
-      var tile = document.createElement("div");
-      tile.setAttribute("class", "tile");
-      tile.style.backgroundImage = "url('images/" + images[i] + "')";
-      tile.style.backgroundPosition = (-x * 100) + "px " + (-y * 100) + "px";
-      tile.style.left = (x * 100) + "px";
-      tile.style.top = (y * 100) + "px";
-      tile.setAttribute("id", i);
-      tile.addEventListener("click", moveTile);
-      puzzle.appendChild(tile);
-      positions[i] = i;
-    } else {
-      emptyX = x;
-      emptyY = y;
-    }
-  }
-}
-
-// Fonction pour mélanger aléatoirement les éléments d'un tableau
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
 }
