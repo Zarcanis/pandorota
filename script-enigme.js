@@ -6,7 +6,7 @@ form.addEventListener('submit', function(event) {
   
   const password = passwordInput.value.toLowerCase();
   
-  if (password === 'homme') {
+  if (password === 'secret') {
     window.location.href = 'mosaic.html';
   } else {
     alert('Réponse incorrecte. Réessayez');
