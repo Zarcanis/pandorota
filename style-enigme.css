@@ -21,12 +21,14 @@ form {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  z-index: 1;
 }
 
 label {
   display: block;
   font-size: 24px;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 input[type="text"] {
@@ -36,6 +38,7 @@ input[type="text"] {
   border-radius: 5px;
   border: none;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 button[type="submit"] {
@@ -47,10 +50,12 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  z-index: 1;
 }
 
 button[type="submit"]:hover {
   background-color: #666;
+  z-index: 1;
 }
 
 
