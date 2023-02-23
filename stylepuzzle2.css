@@ -34,3 +34,8 @@ ul li {
     font-size: 2rem;
     padding-top: 3rem;
 }
+
+.empty {
+    background: #DAD4EF;
+    border: 2px solid #114B5F;
+}
