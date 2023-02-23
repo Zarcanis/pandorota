@@ -66,6 +66,8 @@ button[type="submit"]:hover {
   transform: translateX(-50%);
   z-index: 0;
   margin-top: 20px; /* ajouter une marge supérieure pour éviter le chevauchement */
+  width: 250px; /* largeur de 200 pixels */
+  height: 250px; /* hauteur de 200 pixels */
 }
 
 
