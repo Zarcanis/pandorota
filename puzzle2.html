@@ -16,6 +16,7 @@
 </head>
 <body>
     <div id="container">
+      
         <ul>
             <li>A</li>
             <li>B</li>
@@ -24,8 +25,8 @@
             <li>E</li>
             <li>F</li>
             <li>G</li>
-            <li>H</li>
-            <li class="empty"></li>
+            <li id="li8" draggable="true" ondragstart="dragstart_handler(event)" ondragend="dragend_handler(event)">H</li>
+            <li id="li9" class="empty" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></li>
         </ul>
     </div>
 </body>
