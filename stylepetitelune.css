@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.parchemin {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #333;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.parchemin img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.parchemin:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 1px solid #333;
+	border-bottom: none;
+	border-right: none;
+}
+
+.parchemin:after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%) rotate(-45deg);
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 1px solid #333;
+	border-top: none;
+	border-left: none;
+}
+
+.parchemin:hover {
+	cursor: pointer;
+}
