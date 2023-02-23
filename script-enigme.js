@@ -9,6 +9,6 @@ form.addEventListener('submit', function(event) {
   if (password === 'secret') {
     window.location.href = 'mosaic.html';
   } else {
-    alert('Réponse incorrecte. Réessayez');
+    alert('Come on Dorota, make an effort!');
   }
 });
