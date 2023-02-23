@@ -54,4 +54,13 @@ button[type="submit"]:hover {
 }
 
 
+.gif-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  margin-bottom: 50px; /* Ajoute une marge de 20px en bas */
+  margin-top: 50px; /* Ajoute une marge de 20px en bas */
+}
 
