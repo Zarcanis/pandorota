@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+#puzzle-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.puzzle-piece {
+    width: 166.6px;
+    height: 166.6px;
+    background-size: 500px 500px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+#check-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
