@@ -63,7 +63,6 @@ button[type="submit"]:hover {
 
 .gif-container img {
   display: block;
-  width: 200px; /* ajustez la taille en fonction de votre image */
-  height: 200px; /* ajustez la taille en fonction de votre image */
+ 
 }
 
