@@ -15,9 +15,9 @@ body {
 }
 
 img {
-  float: right;
+  float: center;
   margin-left: 20px;
-	width: 100px; /* largeur de 200 pixels */
+	width: 250px; /* largeur de 200 pixels */
   height: auto; /* hauteur automatique pour maintenir les proportions de l'image */
 
 }
