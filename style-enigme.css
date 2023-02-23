@@ -1,6 +1,6 @@
 body {
   background-color: #242624;
-  filter: hue-rotate(200deg) saturate(6%) brightness(35%);
+  background-color: hsl(200, 6%, 35%);
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
 }
