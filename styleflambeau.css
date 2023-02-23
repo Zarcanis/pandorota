@@ -50,12 +50,4 @@ p {
 	}
 }
 
-.pic {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-	margin-top: 50px; /* ajouter une marge supérieure pour éviter le chevauchement */
-  width: 200px; /* largeur de 200 pixels */
-  height: auto; /* hauteur automatique pour maintenir les proportions de l'image */
-}
+
