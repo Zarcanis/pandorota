@@ -60,14 +60,12 @@ button[type="submit"]:hover {
 
 
 .gif-container {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: 5;
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
   margin-top: 20px; /* ajouter une marge supérieure pour éviter le chevauchement */
-  width: 200px; /* largeur de 200 pixels */
-  height: 200px; /* hauteur de 200 pixels */
 }
 
 
