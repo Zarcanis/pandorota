@@ -59,8 +59,8 @@ button[type="submit"]:hover {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
-  margin-top: 100px; /* ajouter une marge supérieure pour éviter le chevauchement */
+  z-index: 0;
+  margin-top: 50px; /* ajouter une marge supérieure pour éviter le chevauchement */
 }
 
 
