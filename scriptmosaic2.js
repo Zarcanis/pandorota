@@ -3,7 +3,7 @@ var message = document.getElementById("message");
 
 for (var i = 0; i < options.length; i++) {
 	options[i].addEventListener("click", function() {
-		if (this.alt === "image 7") {
+		if (this.alt === "image true") {
 			message.innerHTML = "Hey, well done! :)";
 			setTimeout(function() {
 				window.location.href = "flambeau.html";
